@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E1D21A422F2471BFF0DE9D7 /* Pods_BrainPieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1650C32E6E0A8177102C65 /* Pods_BrainPieTests.framework */; };
 		50420D578879DB90DA1C35E3 /* Pods_BrainPie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B800E2CA7C45B7B256BDC1E /* Pods_BrainPie.framework */; };
+		5B602C3421FC69E9002E4EE4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B602C3321FC69E9002E4EE4 /* Extensions.swift */; };
 		E0A0C6F821FC64450001F83D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C6F721FC64450001F83D /* AppDelegate.swift */; };
-		E0A0C6FA21FC64450001F83D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C6F921FC64450001F83D /* ViewController.swift */; };
 		E0A0C6FD21FC64450001F83D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C6FB21FC64450001F83D /* Main.storyboard */; };
 		E0A0C6FF21FC64450001F83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C6FE21FC64450001F83D /* Assets.xcassets */; };
 		E0A0C70221FC64450001F83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C70021FC64450001F83D /* LaunchScreen.storyboard */; };
@@ -39,6 +39,7 @@
 /* Begin PBXFileReference section */
 		4B1650C32E6E0A8177102C65 /* Pods_BrainPieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainPieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5468DFA27303A4503EA1F488 /* Pods-BrainPieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainPieUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrainPieUITests/Pods-BrainPieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B602C3321FC69E9002E4EE4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5B800E2CA7C45B7B256BDC1E /* Pods_BrainPie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainPie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E4E03CC30038F145F7385A /* Pods-BrainPie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainPie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainPie/Pods-BrainPie.release.xcconfig"; sourceTree = "<group>"; };
 		88B74C280FB3EE3DBC20FC28 /* Pods_BrainPieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrainPieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +49,6 @@
 		DCC5BE3C4ADE07C45B41D398 /* Pods-BrainPieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainPieUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainPieUITests/Pods-BrainPieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E0A0C6F421FC64450001F83D /* BrainPie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainPie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A0C6F721FC64450001F83D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0A0C6F921FC64450001F83D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0A0C6FC21FC64450001F83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0A0C6FE21FC64450001F83D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0A0C70121FC64450001F83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +99,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B602C2F21FC69B2002E4EE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B602C3021FC69BD002E4EE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B602C3121FC69C6002E4EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5D1E6ABEC49DBFC9F8B229A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +158,15 @@
 		E0A0C6F621FC64450001F83D /* BrainPie */ = {
 			isa = PBXGroup;
 			children = (
+				5B602C3121FC69C6002E4EE4 /* Model */,
+				5B602C3021FC69BD002E4EE4 /* View */,
+				5B602C2F21FC69B2002E4EE4 /* Controller */,
 				E0A0C6F721FC64450001F83D /* AppDelegate.swift */,
-				E0A0C6F921FC64450001F83D /* ViewController.swift */,
 				E0A0C6FB21FC64450001F83D /* Main.storyboard */,
 				E0A0C6FE21FC64450001F83D /* Assets.xcassets */,
 				E0A0C70021FC64450001F83D /* LaunchScreen.storyboard */,
 				E0A0C70321FC64450001F83D /* Info.plist */,
+				5B602C3321FC69E9002E4EE4 /* Extensions.swift */,
 			);
 			path = BrainPie;
 			sourceTree = "<group>";
@@ -383,8 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A0C6FA21FC64450001F83D /* ViewController.swift in Sources */,
 				E0A0C6F821FC64450001F83D /* AppDelegate.swift in Sources */,
+				5B602C3421FC69E9002E4EE4 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
