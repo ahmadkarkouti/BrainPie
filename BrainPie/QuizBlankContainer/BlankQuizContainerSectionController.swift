@@ -14,7 +14,7 @@ final class BlankQuizContainerSectionController: ListSectionController {
     private var object: BlankQuizContainerItem?
     
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: 291)
+        return CGSize(width: collectionContext!.containerSize.width, height: 50)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

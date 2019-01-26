@@ -13,7 +13,7 @@ final class MCContainerSectionController: ListSectionController {
     private var object: MCContainerItem?
     
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: collectionContext!.containerSize.width, height: 291)
+        return CGSize(width: collectionContext!.containerSize.width, height: 300)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

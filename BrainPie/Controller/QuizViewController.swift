@@ -18,7 +18,7 @@ class QuizViewController: UIViewController {
     let collectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.backgroundColor = .whiter
+        cv.backgroundColor = .white
         return cv
     }()
     
@@ -40,12 +40,17 @@ class QuizViewController: UIViewController {
 
 extension QuizViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return ([ImageQuizContainerItem(id: "1", image: [#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread")], question: "What is this food?"),
-                 BlankQuizContainerItem(id: "2", question: "What is _______!")]) as [ListDiffable]
+        return ([
+            ImageQuizContainerItem(id: "1", image: [#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread")], question: "What is this food?"),
+            BlankQuizContainerItem(id: "2", question: "What is _______!"),
+            MCContainerItem(id: "answer")
+            ]) as [ListDiffable]
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         switch object {
+        case is MCContainerItem:
+            return MCContainerSectionController()
         case is ImageQuizContainerItem:
             return ImageQuizContainerSectionController()
         case is BlankQuizContainerItem:
