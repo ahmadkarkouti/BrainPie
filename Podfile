@@ -11,6 +11,9 @@ target 'BrainPie' do
     pod 'SDWebImage', '~> 4.0'
     pod 'MKRingProgressView'
     pod 'SwiftyJSON', '~> 4.0'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
 
   target 'BrainPieTests' do
     inherit! :search_paths
