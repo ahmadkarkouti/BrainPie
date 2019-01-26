@@ -46,6 +46,8 @@
 		E0A0C77421FC7A090001F83D /* QuizEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C77321FC7A090001F83D /* QuizEngine.swift */; };
 		E0A0C77621FC7A6C0001F83D /* AppData.json in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C77521FC7A6C0001F83D /* AppData.json */; };
 		E0A0C77821FC7C4F0001F83D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C77721FC7C4F0001F83D /* GoogleService-Info.plist */; };
+		E0A0C77B21FC87D90001F83D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C77A21FC87D90001F83D /* Question.swift */; };
+		E0A0C77D21FC93D30001F83D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C77C21FC93D30001F83D /* Image.swift */; };
 		EB80094C42474E8397FF4DF1 /* Pods_BrainPieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B74C280FB3EE3DBC20FC28 /* Pods_BrainPieUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +121,8 @@
 		E0A0C77321FC7A090001F83D /* QuizEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEngine.swift; sourceTree = "<group>"; };
 		E0A0C77521FC7A6C0001F83D /* AppData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AppData.json; sourceTree = "<group>"; };
 		E0A0C77721FC7C4F0001F83D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0A0C77A21FC87D90001F83D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		E0A0C77C21FC93D30001F83D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,7 @@
 		E0A0C6F621FC64450001F83D /* BrainPie */ = {
 			isa = PBXGroup;
 			children = (
+				E0A0C77921FC87CF0001F83D /* Model */,
 				E0A0C76A21FC761F0001F83D /* MCContainer */,
 				E0A0C75D21FC748A0001F83D /* MultipleChoice */,
 				E0A0C75021FC72A90001F83D /* QuizImageContainer */,
@@ -301,6 +306,15 @@
 				E0A0C77121FC765C0001F83D /* MCContainerSectionController.swift */,
 			);
 			path = MCContainer;
+			sourceTree = "<group>";
+		};
+		E0A0C77921FC87CF0001F83D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0A0C77A21FC87D90001F83D /* Question.swift */,
+				E0A0C77C21FC93D30001F83D /* Image.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +558,7 @@
 				E0A0C75B21FC73140001F83D /* BlankQuizContainerItem.swift in Sources */,
 				5B6A7C7121FC6E1A00E956E7 /* CaptureViewController.swift in Sources */,
 				5B6A7C7321FC6E2A00E956E7 /* ChatBotViewController.swift in Sources */,
+				E0A0C77B21FC87D90001F83D /* Question.swift in Sources */,
 				E0A0C75721FC72B60001F83D /* ImageQuizContainerCell.swift in Sources */,
 				E0A0C77221FC765C0001F83D /* MCContainerSectionController.swift in Sources */,
 				E0A0C75C21FC73140001F83D /* BlankQuizContainerSectionController.swift in Sources */,
@@ -555,6 +570,7 @@
 				E0A0C6F821FC64450001F83D /* AppDelegate.swift in Sources */,
 				5B602C3421FC69E9002E4EE4 /* Extensions.swift in Sources */,
 				E0A0C74F21FC729F0001F83D /* BlankQuizContainerCell.swift in Sources */,
+				E0A0C77D21FC93D30001F83D /* Image.swift in Sources */,
 				E0A0C75821FC72B60001F83D /* ImageQuizContainerItem.swift in Sources */,
 				E0A0C76521FC75360001F83D /* MCSectionController.swift in Sources */,
 				E0A0C75621FC72B60001F83D /* ImageQuizContainerSectionController.swift in Sources */,

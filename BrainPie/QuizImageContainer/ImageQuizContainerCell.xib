@@ -55,6 +55,41 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NI5-9U-OoW">
+                        <rect key="frame" x="65" y="60" width="255" height="212"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bi-ef-g6i">
+                                <rect key="frame" x="5" y="0.0" width="111" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="firstClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="0V9-0X-AS6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-rF-dy8">
+                                <rect key="frame" x="140" y="0.0" width="115" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="secondClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7vq-No-ILw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqb-hi-MJs">
+                                <rect key="frame" x="3" y="112" width="115" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="thirdClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ccI-fO-jPH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTU-5f-b38">
+                                <rect key="frame" x="140" y="112" width="115" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="fourthClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="c5r-sS-2Uv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
             </view>
             <constraints>
@@ -70,10 +105,14 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="375" height="291"/>
             <connections>
+                <outlet property="firstButton" destination="7Bi-ef-g6i" id="cvv-vW-3rj"/>
                 <outlet property="firstImage" destination="mGM-Ak-21y" id="7IS-bp-GMD"/>
+                <outlet property="fourthButton" destination="CTU-5f-b38" id="Fga-zU-t9v"/>
                 <outlet property="fourthImage" destination="Jn9-uH-UKs" id="CkX-px-wNH"/>
                 <outlet property="questionLabel" destination="ThL-1U-Tbj" id="iYO-py-5Vj"/>
+                <outlet property="secondButton" destination="nh4-rF-dy8" id="1lj-S0-MpX"/>
                 <outlet property="secondImage" destination="368-En-ZrB" id="uzK-pF-1v6"/>
+                <outlet property="thirdButton" destination="Sqb-hi-MJs" id="Zgw-dD-i7j"/>
                 <outlet property="thirdImage" destination="dVw-DW-EKX" id="VQs-QF-cSF"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="135.38230884557723"/>

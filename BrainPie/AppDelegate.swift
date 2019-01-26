@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = MainTabBarController()
         FirebaseApp.configure()
+        
+        QuizEngine.shared.buildQuiz(Language: "Yoruba", Module: "Basics") {
+            
+        }
+        
         return true
     }
     
