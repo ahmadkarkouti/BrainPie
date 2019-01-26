@@ -28,8 +28,8 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     func setupViewController() {
         
         viewControllers = [[HomeViewController(), "Home"],
-                           [ChatBotViewController(), "ChatBot"],
-                           [CaptureViewController(), "Capture"],
+                           [QuizViewController(), "ChatBot"],
+                           [QuizViewController(), "Capture"],
                            [SettingsViewController(), "Settings"]].map { (vc) -> UINavigationController in
                             let nv = UINavigationController(rootViewController: vc[0] as! UIViewController)
                             nv.tabBarItem.title = vc[1] as? String

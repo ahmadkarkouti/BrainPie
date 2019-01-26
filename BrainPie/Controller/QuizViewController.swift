@@ -18,13 +18,14 @@ class QuizViewController: UIViewController {
     let collectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        
+        cv.backgroundColor = .whiter
         return cv
     }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         view.addSubview(collectionView)
         collectionView.fillSuperview()
         setupCollectionView()

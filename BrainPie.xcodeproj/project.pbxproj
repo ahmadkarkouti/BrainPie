@@ -35,6 +35,14 @@
 		E0A0C75821FC72B60001F83D /* ImageQuizContainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C75421FC72B60001F83D /* ImageQuizContainerItem.swift */; };
 		E0A0C75B21FC73140001F83D /* BlankQuizContainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C75921FC73130001F83D /* BlankQuizContainerItem.swift */; };
 		E0A0C75C21FC73140001F83D /* BlankQuizContainerSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C75A21FC73140001F83D /* BlankQuizContainerSectionController.swift */; };
+		E0A0C76321FC752F0001F83D /* MCItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C76221FC752F0001F83D /* MCItem.swift */; };
+		E0A0C76521FC75360001F83D /* MCSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C76421FC75360001F83D /* MCSectionController.swift */; };
+		E0A0C76821FC75420001F83D /* MCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C76621FC75420001F83D /* MCCell.swift */; };
+		E0A0C76921FC75420001F83D /* MCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C76721FC75420001F83D /* MCCell.xib */; };
+		E0A0C76C21FC76330001F83D /* MCContainerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C76B21FC76330001F83D /* MCContainerItem.swift */; };
+		E0A0C76F21FC76460001F83D /* MCContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C76D21FC76460001F83D /* MCContainerCell.swift */; };
+		E0A0C77021FC76460001F83D /* MCContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A0C76E21FC76460001F83D /* MCContainerCell.xib */; };
+		E0A0C77221FC765C0001F83D /* MCContainerSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A0C77121FC765C0001F83D /* MCContainerSectionController.swift */; };
 		EB80094C42474E8397FF4DF1 /* Pods_BrainPieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B74C280FB3EE3DBC20FC28 /* Pods_BrainPieUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +105,14 @@
 		E0A0C75421FC72B60001F83D /* ImageQuizContainerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageQuizContainerItem.swift; sourceTree = "<group>"; };
 		E0A0C75921FC73130001F83D /* BlankQuizContainerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankQuizContainerItem.swift; sourceTree = "<group>"; };
 		E0A0C75A21FC73140001F83D /* BlankQuizContainerSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankQuizContainerSectionController.swift; sourceTree = "<group>"; };
+		E0A0C76221FC752F0001F83D /* MCItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCItem.swift; sourceTree = "<group>"; };
+		E0A0C76421FC75360001F83D /* MCSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCSectionController.swift; sourceTree = "<group>"; };
+		E0A0C76621FC75420001F83D /* MCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCCell.swift; sourceTree = "<group>"; };
+		E0A0C76721FC75420001F83D /* MCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCCell.xib; sourceTree = "<group>"; };
+		E0A0C76B21FC76330001F83D /* MCContainerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCContainerItem.swift; sourceTree = "<group>"; };
+		E0A0C76D21FC76460001F83D /* MCContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCContainerCell.swift; sourceTree = "<group>"; };
+		E0A0C76E21FC76460001F83D /* MCContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MCContainerCell.xib; sourceTree = "<group>"; };
+		E0A0C77121FC765C0001F83D /* MCContainerSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCContainerSectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,13 +179,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5B602C3121FC69C6002E4EE4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		5D1E6ABEC49DBFC9F8B229A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,9 +217,10 @@
 		E0A0C6F621FC64450001F83D /* BrainPie */ = {
 			isa = PBXGroup;
 			children = (
+				E0A0C76A21FC761F0001F83D /* MCContainer */,
+				E0A0C75D21FC748A0001F83D /* MultipleChoice */,
 				E0A0C75021FC72A90001F83D /* QuizImageContainer */,
 				E0A0C74921FC72910001F83D /* QuizBlankContainer */,
-				5B602C3121FC69C6002E4EE4 /* Model */,
 				5B602C3021FC69BD002E4EE4 /* View */,
 				5B602C2F21FC69B2002E4EE4 /* Controller */,
 				E0A0C6F721FC64450001F83D /* AppDelegate.swift */,
@@ -260,6 +270,28 @@
 				E0A0C75221FC72B60001F83D /* ImageQuizContainerSectionController.swift */,
 			);
 			path = QuizImageContainer;
+			sourceTree = "<group>";
+		};
+		E0A0C75D21FC748A0001F83D /* MultipleChoice */ = {
+			isa = PBXGroup;
+			children = (
+				E0A0C76221FC752F0001F83D /* MCItem.swift */,
+				E0A0C76421FC75360001F83D /* MCSectionController.swift */,
+				E0A0C76621FC75420001F83D /* MCCell.swift */,
+				E0A0C76721FC75420001F83D /* MCCell.xib */,
+			);
+			path = MultipleChoice;
+			sourceTree = "<group>";
+		};
+		E0A0C76A21FC761F0001F83D /* MCContainer */ = {
+			isa = PBXGroup;
+			children = (
+				E0A0C76B21FC76330001F83D /* MCContainerItem.swift */,
+				E0A0C76D21FC76460001F83D /* MCContainerCell.swift */,
+				E0A0C76E21FC76460001F83D /* MCContainerCell.xib */,
+				E0A0C77121FC765C0001F83D /* MCContainerSectionController.swift */,
+			);
+			path = MCContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,9 +402,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A0C77021FC76460001F83D /* MCContainerCell.xib in Resources */,
 				E0A0C70221FC64450001F83D /* LaunchScreen.storyboard in Resources */,
 				E0A0C6FF21FC64450001F83D /* Assets.xcassets in Resources */,
 				E0A0C75521FC72B60001F83D /* ImageQuizContainerCell.xib in Resources */,
+				E0A0C76921FC75420001F83D /* MCCell.xib in Resources */,
 				E0A0C6FD21FC64450001F83D /* Main.storyboard in Resources */,
 				E0A0C74D21FC729F0001F83D /* BlankQuizContainerCell.xib in Resources */,
 			);
@@ -483,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6A7C7F21FC704C00E956E7 /* LanguageCollectionViewCell.swift in Sources */,
+				E0A0C76C21FC76330001F83D /* MCContainerItem.swift in Sources */,
 				5B6A7C7B21FC6FF600E956E7 /* LessonsViewController.swift in Sources */,
 				5B6A7C8121FC705D00E956E7 /* ContinueCourseCollectionViewCell.swift in Sources */,
 				5B6A7C6F21FC6D8900E956E7 /* CellsID.swift in Sources */,
@@ -490,16 +525,21 @@
 				5B6A7C7121FC6E1A00E956E7 /* CaptureViewController.swift in Sources */,
 				5B6A7C7321FC6E2A00E956E7 /* ChatBotViewController.swift in Sources */,
 				E0A0C75721FC72B60001F83D /* ImageQuizContainerCell.swift in Sources */,
+				E0A0C77221FC765C0001F83D /* MCContainerSectionController.swift in Sources */,
 				E0A0C75C21FC73140001F83D /* BlankQuizContainerSectionController.swift in Sources */,
 				5B6A7C7721FC6E5300E956E7 /* MainTabBarController.swift in Sources */,
+				E0A0C76F21FC76460001F83D /* MCContainerCell.swift in Sources */,
 				5B6A7C7D21FC703800E956E7 /* LanguageHeaderCollectionViewCell.swift in Sources */,
+				E0A0C76821FC75420001F83D /* MCCell.swift in Sources */,
 				E0A0C74E21FC729F0001F83D /* QuizViewController.swift in Sources */,
 				E0A0C6F821FC64450001F83D /* AppDelegate.swift in Sources */,
 				5B602C3421FC69E9002E4EE4 /* Extensions.swift in Sources */,
 				E0A0C74F21FC729F0001F83D /* BlankQuizContainerCell.swift in Sources */,
 				E0A0C75821FC72B60001F83D /* ImageQuizContainerItem.swift in Sources */,
+				E0A0C76521FC75360001F83D /* MCSectionController.swift in Sources */,
 				E0A0C75621FC72B60001F83D /* ImageQuizContainerSectionController.swift in Sources */,
 				5B6A7C7521FC6E3D00E956E7 /* HomeViewController.swift in Sources */,
+				E0A0C76321FC752F0001F83D /* MCItem.swift in Sources */,
 				5B6A7C7921FC6E6A00E956E7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
