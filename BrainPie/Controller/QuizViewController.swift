@@ -11,12 +11,15 @@ import IGListKit
 
 class QuizViewController: UIViewController {
     
+    var objects = [ListDiffable]()
+    
     lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
     let collectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.backgroundColor = .white
         return cv
@@ -28,23 +31,29 @@ class QuizViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(collectionView)
         collectionView.fillSuperview()
+        collectionView.isPagingEnabled = true
         setupCollectionView()
+
+        for item in QuizEngine.shared.question {
+                self.objects.append(MCContainerItem(id: item.question))
+        }
+            
+        self.adapter.reloadData(completion: nil)
+        
     }
     
     func setupCollectionView() {
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        
+        
     }
     
 }
 
 extension QuizViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return ([
-            ImageQuizContainerItem(id: "1", image: [#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread"),#imageLiteral(resourceName: "bread")], question: "What is this food?"),
-            BlankQuizContainerItem(id: "2", question: "What is _______!"),
-            MCContainerItem(id: "answer")
-            ]) as [ListDiffable]
+        return objects
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

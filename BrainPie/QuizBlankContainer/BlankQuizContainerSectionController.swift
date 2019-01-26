@@ -23,7 +23,7 @@ final class BlankQuizContainerSectionController: ListSectionController {
         
         guard let object = object else { fatalError() }
         
-        cell.viewModel = BlankQuizContainerCell.ViewModel(id: object.id, question: object.question)
+        cell.viewModel = BlankQuizContainerCell.ViewModel(id: object.id, question: object.question, correct: object.correct, option1: object.option1, option2: object.option2, option3: object.option3, option4: object.option4)
         
         return cell
     }

@@ -12,6 +12,7 @@ import IGListKit
 final class ImageQuizContainerSectionController: ListSectionController {
     
     private var object: ImageQuizContainerItem?
+    var didTapInterests: ((_ selected: String) -> Void)?
     
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 291)
@@ -23,7 +24,9 @@ final class ImageQuizContainerSectionController: ListSectionController {
         
         guard let object = object else { fatalError() }
         
-        cell.viewModel = ImageQuizContainerCell.ViewModel(id: object.id, question: object.question, images: object.image)
+        cell.viewModel = ImageQuizContainerCell.ViewModel(id: object.id, question: object.question, images: object.image, correct: object.correct, didTapItem: { (selected) in
+            self.didTapInterests!(selected)
+        })
         
         return cell
     }

@@ -11,14 +11,16 @@ import IGListKit
 
 class ImageQuizContainerItem: ListDiffable {
     let id: String
-    let image: [UIImage]
+    let image: [String]
     let question: String
+    let correct: String
     
     
-    init(id: String, image: [UIImage], question: String) {
+    init(id: String, image: [String], question: String, correct: String) {
         self.id = id
         self.image = image
         self.question = question
+        self.correct = correct
     }
     
     func diffIdentifier() -> NSObjectProtocol {

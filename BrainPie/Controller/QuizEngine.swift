@@ -8,12 +8,31 @@
 
 import UIKit
 import IGListKit
+import Firebase
 
 class QuizEngine {
     
     static let shared = QuizEngine()
+    var question = [Question]()
     
-    func buildQuiz() {
+    
+    func buildQuiz(Language: String, Module: String, completionHandler: @escaping () -> Void) {
+    Database.database().reference().child("Language").child(Language).child("Modules").child(Module).child("Questions").observe(.childAdded) { (snapshot) in
+            
+        guard let values = snapshot.value as? [String: String] else {return}
+        self.question.append(Question(dictionary: values))
+        }
         
+        completionHandler()
     }
+    
+    
+    func selectedAnswer(selected: String, correct: String) -> Bool {
+        if selected == correct {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }
